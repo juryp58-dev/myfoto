@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Юрий Фото • Видео • Дрон</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+  }
+
+  .yury-banner-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 0 10px;
+  }
+
+  .yury-banner {
+    position: relative;
+    max-width: 100%;
+    width: 600px;
+  }
+
+  .yury-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .yury-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.2s;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .yury-btn-order {
+    bottom: 26%;
+    background: #007bff;
+    color: #fff;
+  }
+  .yury-btn-order:hover {
+    background: #1a8cff;
+  }
+
+  .yury-btn-reviews {
+    bottom: 16%;
+    background: #ffcc00;
+    color: #000;
+  }
+  .yury-btn-reviews:hover {
+    background: #ffd84d;
+  }
+
+  .yury-btn-whatsapp {
+    bottom: 6%;
+    background: #25D366;
+    color: #fff;
+  }
+  .yury-btn-whatsapp:hover {
+    background: #1ebe5d;
+  }
+
+  /* 📱 Мобильная адаптация */
+  @media (max-width: 768px) {
+    .yury-btn {
+      font-size: 0.95rem;
+      padding: 10px 20px;
+      width: 80%;
+    }
+    .yury-btn-order { bottom: 30%; }
+    .yury-btn-reviews { bottom: 18%; }
+    .yury-btn-whatsapp { bottom: 6%; }
+  }
+
+  @media (max-width: 480px) {
+    .yury-btn {
+      font-size: 0.85rem;
+      padding: 8px 16px;
+      width: 90%;
+    }
+    .yury-btn-order { bottom: 32%; }
+    .yury-btn-reviews { bottom: 20%; }
+    .yury-btn-whatsapp { bottom: 8%; }
+  }
+</style>
+</head>
+
+<body>
+
+<section class="yury-banner-section">
+  <div class="yury-banner">
+    <img src="your-image.jpg" alt="Юрий Фото Видео Дрон">
+
+    <!-- Заказать съёмку -->
+    <a href="https://wa.me/79638332471?text=Здравствуйте,%20Юрий!%20Хочу%20заказать%20съёмку."
+       class="yury-btn yury-btn-order">
+      🎥 Заказать съёмку
+    </a>
+
+    <!-- Отзывы -->
+    <a href="https://wa.me/79638332471?text=Хочу%20оставить%20отзыв%20о%20вашей%20работе"
+       class="yury-btn yury-btn-reviews">
+      💬 Отзывы
+    </a>
+
+    <!-- Написать в WhatsApp -->
+    <a href="https://wa.me/79638332471?text=Здравствуйте,%20Юрий!%20Хочу%20заказать%20фото%20или%20видео%20съёмку."
+       class="yury-btn yury-btn-whatsapp">
+      📸 Написать в WhatsApp
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
